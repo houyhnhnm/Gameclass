@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Game 1</title>
+<script src="..game1.js">
+</script>
+</head>
+<body>
+<h1> GAME 1 </h1>
+<span> counter =</span> <span id="counterspace">?</span><button onclick="getcountermain()">get count</button>
+<div id="gamespace">
+</div>
+<table>
+<tbody><tr>
+<td>
+<p>Puser</p>
+<b>Axis1</b><select id="Pa1">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+</select><p></p>
+<b>Axis2</b><select id="Pa2">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+</select>
+<p></p>
+<b>Type</b><select id="Pt1">
+<option value="0">horizontal</option>
+<option value="1">vertical</option>
+</select><p></p>
+<button id="Pb1" onclick="Pcheck()">PUser Action</button>
+</td>
+<td>
+<p>Nuser</p>
+<b>Axis1</b><select id="Na1">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+</select><p></p>
+<b>Axis2</b><select id="Na2">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+</select>
+<p></p>
+<b>Type</b><select id="Nt1">
+<option value="0">horizontal</option>
+<option value="1">vertical</option>
+</select><p></p>
+<button id="Nb1" onclick="Ncheck()">NUser Action</button>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="actionmessage">
+</div>
+<div id="errormessage">
+</div>
+<script>
+document.getElementById("actionmessage").innerHTML="Go Puser";
+document.getElementById("Nb1").disabled=true;
+displayarray();
+</script>
+</body>
+</html>
